@@ -1,0 +1,16 @@
+[project]
+name = "working"
+version = "0.1.0"
+requires-python = ">=3.9.0"
+dependencies = [
+    "opencv-python-headless==4.5.4.60",
+    "numpy==1.26.4",
+    "pyyaml==6.0.2",
+    "pillow==10.2.0",
+    "pybind11>=2.13.6",
+    "zmq>=0.0.0",
+    "websockets>=15.0.1",
+    "aiohttp>=3.12.2",
+    "flask>=3.1.1",
+    "flask-socketio>=5.5.1",
+]

@@ -1,4 +1,6 @@
-model: assets/models/nightlane_rev2_edgetpu.tflite
+model_path: assets/models/nightlane_rev2_edgetpu.tflite
+od_model_path: assets/models/ssdlite_mobiledet_coco_qat_postprocess.tflite
+od_labels: assets/labels/coco_labels.txt
 quantization:
   std: 0.003921568859368563
   mean: 0
@@ -11,3 +13,11 @@ input_shape:
 output_shape:
   - 480
   - 320
+input_folder: "images"
+output_folder: "results"
+small_input: "one_image"
+small_result: "one_result"
+camera_index: 0
+save_frames: false
+input_image: "images/frame_000473.jpg"
+output_image: "one_result"
