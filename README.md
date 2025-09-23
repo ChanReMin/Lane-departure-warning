@@ -18,7 +18,7 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 ---
 
 ## Models
-
+- Lane finder model from this repository: https://github.com/xadrianzetx/lanefinder
 - Backbone: **MobileNetV2 + U-Net decoder**  
 - Deployment: Converted to TensorFlow Lite with **full integer quantization** for Edge TPU acceleration.  
 
@@ -49,11 +49,10 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 
 ## Hardware Requirements
 
-- Raspberry Pi 3 B+ or newer (Raspbian Buster recommended)  
-- Coral USB Accelerator (Edge TPU)  
-- Pi Camera with wide Field of View (FOV recommended)  
+- Raspberry Pi 5
+- Coral USB Accelerator (Edge TPU)
+- Camera attached to Raspberry Pi
 - Buzzer + LED for warnings  
-- Touchscreen (optional, for live visualization)  
 - Powerbank ≥ 2.4A (if testing in car)  
 
 ---
