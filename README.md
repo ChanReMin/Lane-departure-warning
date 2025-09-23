@@ -42,7 +42,7 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 ## Prototype
 
 <p align="center">
-  <img src="assets/prototype.gif">
+  <img src="assets/2d77da0a-3ff8-4da8-b72f-f2531b8a461c.jpg">
 </p>
 
 ---
