@@ -56,9 +56,3 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 - Powerbank ≥ 2.4A (if testing in car)  
 
 ---
-
-## Installation & Run
-
-1. Enable the camera interface:  
-   ```bash
-   sudo raspi-config
