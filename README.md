@@ -100,14 +100,13 @@ Nmap done: 256 IP addresses (10 hosts up) scanned in 5.27 seconds
 For first time finding, try ssh to all these IP with this command
 ```
 ssh <raspberrypi host>@<IP>
-if prompt out the password entering, you can know the IP of your raspberry pi now
-save the Mac address below that IP
 ```
-eg:
+if prompt out the password entering, you can know the IP of your raspberry pi now
+save the Mac address below that IP, eg:
 ```
 Nmap scan report for 192.168.1.12 (192.168.1.12)
 Host is up (0.016s latency).
-MAC Address: 2C:CF:67:38:FE:6C (Unknown)
+MAC Address: **2C:CF:67:38:FE:6C** (Unknown)
 ```
-next time, whenever you want to connect to Pi, use nmap to scan and choose the IP which the exact MAC Address like before
+Next time, whenever you want to connect to Pi, use nmap to scan and choose the IP which the exact MAC Address like before
 
