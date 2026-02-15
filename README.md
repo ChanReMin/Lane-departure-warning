@@ -58,6 +58,7 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 ---
 # Example how to connect to your pi through ssh without pi GUI
 Check your IP range on Window by running
+**IMPORTANT make sure that you've already setup Pi to connect to same wifi with your PC when using Pi Imager to create boot image**
 ```
 ipconfig
 ```
