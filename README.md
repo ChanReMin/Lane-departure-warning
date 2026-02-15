@@ -57,11 +57,14 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 
 ---
 # Example how to connect to your pi through ssh without pi GUI
-Check your IP range on Window by running
-**IMPORTANT make sure that you've already setup Pi to connect to same wifi with your PC when using Pi Imager to create boot image**
+By this way, you'll never need a monitor or keyboard to use Raspberry Pi
+## Check your IP range on Window by running
+**IMPORTANT** 
+Make sure that you've already setup Pi to connect to same wifi with your PC when using Pi Imager to create boot image
 ```
 ipconfig
 ```
+## Scap the IP and MAC Address of your Pi
 After getting your IP, eg 192.168.1.5, use nmap to scan all the IP in 192.168.1.x
 installing nmap
 ```
@@ -100,16 +103,17 @@ Nmap scan report for 192.168.1.11 (192.168.1.11)
 Host is up.
 Nmap done: 256 IP addresses (10 hosts up) scanned in 5.27 seconds
 ```
+## Try connect to your Pi for the first time
 For first time finding, try ssh to all these IP with this command
 ```
 ssh <raspberrypi host>@<IP>
 ```
-if prompt out the password entering, you can know the IP of your raspberry pi now
+if prompt out the password entering,then it is the right Pi IP, you can now have the IP of your raspberry pi now
 save the Mac address below that IP, eg:
 ```
 Nmap scan report for 192.168.1.12 (192.168.1.12)
 Host is up (0.016s latency).
 MAC Address: **2C:CF:67:38:FE:6C** (Unknown)
 ```
-Next time, whenever you want to connect to Pi, use nmap to scan and choose the IP which the exact MAC Address like before
+Next time, whenever you want to connect to Pi, use nmap to scan and choose the IP which the exact MAC Address like before if Pi IP change
 
