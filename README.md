@@ -57,7 +57,7 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 
 ---
 # Example how to connect to your pi through ssh without pi GUI
-## Check your IP range on Window by running
+Check your IP range on Window by running
 ```
 ipconfig
 ```
@@ -65,5 +65,48 @@ After getting your IP, eg 192.168.1.5, use nmap to scan all the IP in 192.168.1.
 ```
 nmap -sn 192.168.1.0/24
 ```
+Example output
+```
+Nmap scan report for gpon.net (192.168.1.1)
+Host is up (0.00s latency).
+MAC Address: A0:09:2E:18:D8:8E (Unknown)
+Nmap scan report for 192.168.1.2 (192.168.1.2)
+Host is up (0.063s latency).
+MAC Address: 00:D2:79:B4:02:D6 (Unknown)
+Nmap scan report for 192.168.1.3 (192.168.1.3)
+Host is up (0.00s latency).
+MAC Address: 3C:06:A7:1F:35:72 (Unknown)
+Nmap scan report for 192.168.1.4 (192.168.1.4)
+Host is up (0.016s latency).
+MAC Address: 1C:90:FF:35:A9:3C (Unknown)
+Nmap scan report for 192.168.1.8 (192.168.1.8)
+Host is up (0.016s latency).
+MAC Address: 4C:24:CE:13:B8:E1 (Unknown)
+Nmap scan report for 192.168.1.9 (192.168.1.9)
+Host is up (0.00s latency).
+MAC Address: B0:BE:83:2B:55:2F (Unknown)
+Nmap scan report for 192.168.1.10 (192.168.1.10)
+Host is up (0.016s latency).
+MAC Address: 4C:24:CE:13:B8:E1 (Unknown)
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.016s latency).
+MAC Address: 2C:CF:67:38:FE:6C (Unknown)
+Nmap scan report for 192.168.1.6 (192.168.1.6)
+Host is up.
+Nmap scan report for 192.168.1.11 (192.168.1.11)
+Host is up.
+Nmap done: 256 IP addresses (10 hosts up) scanned in 5.27 seconds
+```
+For first time finding, try ssh to all these IP with this command
+```
+ssh <raspberrypi host>@<IP>
+if prompt out the password entering, you can know the IP of your raspberry pi now
+save the Mac address below that IP
+eg:
+```
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.016s latency).
+MAC Address: 2C:CF:67:38:FE:6C (Unknown)
+```
+next time, whenever you want to connect to Pi, use nmap to scan and choose the IP which the exact MAC Address like before
 
-try ssh to all IP
