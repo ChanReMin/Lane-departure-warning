@@ -56,3 +56,14 @@ The model detects road lanes from dashcam footage, processes the results on **Ra
 - Powerbank ≥ 2.4A (if testing in car)  
 
 ---
+# Example how to connect to your pi through ssh without pi GUI
+## Check your IP range on Window by running
+```
+ipconfig
+```
+After getting your IP, eg 192.168.1.5, use nmap to scan all the IP in 192.168.1.x
+```
+nmap -sn 192.168.1.0/24
+```
+
+try ssh to all IP
