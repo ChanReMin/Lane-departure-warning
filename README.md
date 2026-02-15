@@ -102,6 +102,7 @@ For first time finding, try ssh to all these IP with this command
 ssh <raspberrypi host>@<IP>
 if prompt out the password entering, you can know the IP of your raspberry pi now
 save the Mac address below that IP
+```
 eg:
 ```
 Nmap scan report for 192.168.1.12 (192.168.1.12)
