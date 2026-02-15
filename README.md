@@ -62,7 +62,9 @@ Check your IP range on Window by running
 ipconfig
 ```
 After getting your IP, eg 192.168.1.5, use nmap to scan all the IP in 192.168.1.x
+installing nmap
 ```
+winget install nmap
 nmap -sn 192.168.1.0/24
 ```
 Example output
